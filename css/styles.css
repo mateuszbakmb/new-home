@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Rustico;
+  src: url(/fonts/Rustico-Regular.otf);
+}
+@font-face {
+  font-family: Briberra;
+  src: url(/fonts/Briberra.otf);
+}
+@font-face {
+  font-family: Colus;
+  src: url(/fonts/Colus-Regular.otf);
+}
+@font-face {
+  font-family: Aileron;
+  src: url(/fonts/Aileron-Black.otf);
+}
+@font-face {
+  font-family: Serico;
+  src: url(/fonts/Serico-Regular.otf);
+}
+@font-face {
+  font-family: Cunia;
+  src: url(/fonts/Cunia.ttf);
+}
+body {
+  background: url(/img/house1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.4);
+  outline: none;
+  font-family: Cunia;
+  box-sizing: border-box;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+nav a:hover {
+  color: #5ba4cc;
+}
+nav .fas.fa-bars {
+  color: #fff;
+  font-size: 1.9rem;
+}
+
+section {
+  display: block;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+section .headers {
+  font-size: 4rem;
+  font-family: Colus;
+  padding: 10px;
+}
+section #titlePage {
+  overflow: hidden;
+  font-size: calc(3rem + 2vw);
+  text-align: left;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  font-family: Rustico;
+  height: 100vh;
+  top: 10vh;
+  padding: 40px;
+  color: #fff;
+  text-shadow: 2px 0px 5px #8c8c8c;
+}
+section #arrow {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: none;
+}
+section .infoText {
+  font-size: 1.3rem;
+  padding: 50px;
+}
+section .infoText .textPanel {
+  text-align: justify;
+}
+section .infoText .iconPanel {
+  text-align: center;
+  font-size: 10rem;
+}
+section #howPage {
+  padding: 50px;
+  color: #fff;
+  height: auto;
+  background-color: #04082a;
+}
+section #movingService {
+  padding: 50px;
+  color: #fff;
+  height: auto;
+  background-color: #4a1518;
+}
+section #customers {
+  padding: 50px;
+  color: #fff;
+  height: auto;
+  background-color: #4b4b4b;
+}
+section #contact {
+  padding: 50px;
+  color: #fff;
+  height: auto;
+  background-color: black;
+}
+
+/*# sourceMappingURL=styles.css.map */
