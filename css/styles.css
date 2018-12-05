@@ -3,20 +3,8 @@
   src: url(/fonts/Rustico-Regular.otf);
 }
 @font-face {
-  font-family: Briberra;
-  src: url(/fonts/Briberra.otf);
-}
-@font-face {
   font-family: Colus;
   src: url(/fonts/Colus-Regular.otf);
-}
-@font-face {
-  font-family: Aileron;
-  src: url(/fonts/Aileron-Black.otf);
-}
-@font-face {
-  font-family: Serico;
-  src: url(/fonts/Serico-Regular.otf);
 }
 @font-face {
   font-family: Cunia;
@@ -54,6 +42,7 @@ nav .fas.fa-bars {
 
 section {
   display: block;
+  overflow: hidden;
   height: auto;
   width: 100%;
   text-align: center;
@@ -65,7 +54,6 @@ section .headers {
   padding: 10px;
 }
 section #titlePage {
-  overflow: hidden;
   font-size: calc(3rem + 2vw);
   text-align: left;
   box-sizing: border-box;
@@ -74,7 +62,7 @@ section #titlePage {
   font-family: Rustico;
   height: 100vh;
   top: 10vh;
-  padding: 40px;
+  padding: 40px 60px 40px 60px;
   color: #fff;
   text-shadow: 2px 0px 5px #8c8c8c;
 }
@@ -83,6 +71,7 @@ section #arrow {
   margin-left: auto;
   margin-right: auto;
   text-shadow: none;
+  margin-top: 35vh;
 }
 section .infoText {
   font-size: 1.3rem;
@@ -118,6 +107,67 @@ section #contact {
   color: #fff;
   height: auto;
   background-color: black;
+}
+
+#copyright {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #5ba4cc;
+  background-color: #04082a;
+}
+
+.fa-truck {
+  animation: drive 2s infinite ease-in-out;
+  position: relative;
+}
+
+@keyframes drive {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.fa-hammer {
+  animation: hit 1s infinite ease-in;
+}
+
+@keyframes hit {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(70deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+.fa-phone {
+  animation: call 1s infinite ease-out;
+}
+
+@keyframes call {
+  0% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
