@@ -12,24 +12,23 @@ let href = navbar.querySelectorAll("a[href]").forEach(elem=> {
 
 
 //animated number
-window.addEventListener('scroll', check)
 
-let checking = document.querySelector('#projectCounter')
-let newe = checking.scrollTop()
-console.log(newe)
-
-function check (){
-  if (window.pageYOffset >=2000){
-    countUpProjects();
-    window.removeEventListener('scroll', check)
-  }
+let projectsAmount = document.querySelector('#projectsCounter')
+const scrolling = function(e) {
+    let elementPos = projectsAmount.getBoundingClientRect().y - window.innerHeight + projectsAmount.getBoundingClientRect().height;
+    if (elementPos >= -600 && elementPos <= 20) {
+        countUpProjects();
+        countUpSatisfied();
+        window.removeEventListener('scroll', scrolling)
+    }
 }
+
+window.addEventListener("scroll", scrolling);
 
 function countUpProjects () {
 let customers = document.querySelector('#projectsCounter')
 let current = 0;
-let end = 2000;
-let range = 2000/500;
+let end = 200;
 
   let animating = setInterval(function(){
     current++;
@@ -37,25 +36,19 @@ let range = 2000/500;
     if(current === end){
       clearInterval(animating);
     }
-  }, range)
+  }, 10)
 }
 
 function countUpSatisfied(){
-  let customers = document.querySelector('#projectsCounter')
   let satisfied = document.querySelector('#satisfiedCounter')
-
-  let newArray = [customers, satisfied]
-  let done = newArray.forEach(elem=>{
     let current = 0;
-    let end = elem.innerHTML;
-    let range = elem.innerHTML/1000;
+    let end = 1000;
 
     let animating = setInterval(function(){
       current++;
-      elem.innerHTML = current;
-      if(current === 1000){
+      satisfied.innerHTML = current;
+      if(current === end){
         clearInterval(animating);
       }
-    }, range)
-  })
+    }, 1)
 }
