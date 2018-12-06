@@ -22,16 +22,21 @@ $white: #fff;
 }
 
 body {
+margin:0;
+}
+
+#imgBg {
   // image taken from https://www.pexels.com/
   background: url(../img/house1.jpg);
   background-size: cover;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: absolute;
+  // position: absolute;
   height: 100vh;
   width: 100%;
   margin: 0;
+  padding: 0;
+  overflow:hidden;
 }
 
 nav {
@@ -77,13 +82,14 @@ section {
     display: block;
     font-family: Rustico;
     height: 100vh;
-    padding: 40px 60px 40px 60px;
+    // padding: 40px 60px 40px 60px;
     color: $white;
     text-shadow: 2px 0px 5px rgba(140, 140, 140, 1);
 
     #makeHome {
       position: relative;
       top: 10vh;
+      padding: 40px 60px;
     }
 
   }
@@ -98,6 +104,7 @@ section {
   // }
 
     .infoText {
+      font-family: 'Ubuntu', sans-serif;
       font-size: 1.3rem;
       padding: 50px 10px 50px 10px;
 
@@ -128,12 +135,14 @@ section {
   }
 
   #customers {
+
     padding: 50px;
     color: $white;
     height: auto;
     background-color: $grey-color;
 
     #projects, #satisfied {
+      font-family: 'Ubuntu', sans-serif;
       font-size: calc(1rem + 2vw);
 
       #projectsCounter, #satisfiedCounter {
@@ -158,6 +167,7 @@ section {
 }
 
 #copyright {
+  font-family: 'Ubuntu', sans-serif;
   width: 100%;
   padding: 10px;
   text-align: center;

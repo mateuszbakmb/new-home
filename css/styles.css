@@ -11,15 +11,19 @@
   src: url(../fonts/Cunia.ttf);
 }
 body {
+  margin: 0;
+}
+
+#imgBg {
   background: url(../img/house1.jpg);
   background-size: cover;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: absolute;
   height: 100vh;
   width: 100%;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 nav {
@@ -61,15 +65,16 @@ section #titlePage {
   display: block;
   font-family: Rustico;
   height: 100vh;
-  padding: 40px 60px 40px 60px;
   color: #fff;
   text-shadow: 2px 0px 5px #8c8c8c;
 }
 section #titlePage #makeHome {
   position: relative;
   top: 10vh;
+  padding: 40px 60px;
 }
 section .infoText {
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.3rem;
   padding: 50px 10px 50px 10px;
 }
@@ -101,6 +106,7 @@ section #customers {
   background-color: #4b4b4b;
 }
 section #customers #projects, section #customers #satisfied {
+  font-family: "Ubuntu", sans-serif;
   font-size: calc(1rem + 2vw);
 }
 section #customers #projects #projectsCounter, section #customers #projects #satisfiedCounter, section #customers #satisfied #projectsCounter, section #customers #satisfied #satisfiedCounter {
@@ -119,6 +125,7 @@ section #customers {
 }
 
 #copyright {
+  font-family: "Ubuntu", sans-serif;
   width: 100%;
   padding: 10px;
   text-align: center;
