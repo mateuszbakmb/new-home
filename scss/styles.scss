@@ -1,4 +1,4 @@
-$burg-color: rgb(74, 21, 24);
+$burg-color: rgb(66, 19, 22);
 $dark-color: rgb(4,8,42);
 $blue-color: rgb(12,28,139);
 $lightblue-color: rgb(91, 164, 204);
@@ -22,6 +22,7 @@ $white: #fff;
 }
 
 body {
+  // image taken from https://www.pexels.com/
   background: url(/img/house1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,7 +64,7 @@ section {
   box-sizing: border-box;
 
   .headers{
-    font-size: 4rem;
+    font-size: calc(2.5rem + 2vw);
     font-family: Colus;
     padding: 10px;
   }
@@ -73,35 +74,41 @@ section {
     text-align: left;
     box-sizing: border-box;
     display: block;
-    position: relative;
     font-family: Rustico;
     height: 100vh;
-    top: 10vh;
     padding: 40px 60px 40px 60px;
     color: $white;
     text-shadow: 2px 0px 5px rgba(140, 140, 140, 1);
+
+    #makeHome {
+      position: relative;
+      top: 10vh;
+    }
+
   }
 
-  #arrow {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-shadow: none;
-    margin-top: 35vh;
-  }
-
+  // #arrow {
+  //   font-size: calc(1.4rem + 2vw);
+  //   text-align: center;
+  //   text-shadow: none;
+  //   position: absolute;
+  //   bottom: 40px;
+  //   left: 50%;
+  // }
 
     .infoText {
       font-size: 1.3rem;
       padding: 50px;
 
       .textPanel{
+        padding: 10px;
         text-align: justify;
         }
 
       .iconPanel {
+        padding: 10px;
         text-align: center;
-        font-size: 10rem;
+        font-size: calc(9rem + 2vw);
         }
       }
 
@@ -133,6 +140,11 @@ section {
     background-color: $black-color;
   }
 
+  #customers {
+    padding-left:0;
+    padding-right: 0;
+  }
+
 }
 
 #copyright {
@@ -144,7 +156,7 @@ section {
 }
 
 
-//animations
+//icon animations
 
 .fa-truck {
   animation: drive 2s infinite ease-in-out;
@@ -152,9 +164,9 @@ section {
 }
 
 @keyframes drive {
-  0% {  left: 0;}
-  50% {  left: 50px;}
-  100% {  left: 0px;}
+  0% {  left: -30px;}
+  50% {  left: 30px;}
+  100% {  left: -30px;}
 }
 
 .fa-hammer {
@@ -177,4 +189,15 @@ section {
   40%{transform: rotate(-10deg)}
   80%{transform: rotate(10deg)}
   100%{transform: rotate(-10deg)}
+}
+
+
+//pics hovering
+
+.hovering img{
+  transition: transform 0.35s ease-in-out;
+}
+
+.hovering img:hover{
+  transform: scale(0.95);
 }
