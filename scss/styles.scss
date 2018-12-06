@@ -8,22 +8,22 @@ $white: #fff;
 
 @font-face {
   font-family: Rustico;
-  src:url(/fonts/Rustico-Regular.otf);
+  src:url(fonts/Rustico-Regular.otf);
 }
 
 @font-face {
   font-family:Colus;
-  src:url(/fonts/Colus-Regular.otf);
+  src:url(fonts/Colus-Regular.otf);
 }
 
 @font-face {
   font-family:Cunia;
-  src:url(/fonts/Cunia.ttf);
+  src:url(fonts/Cunia.ttf);
 }
 
 body {
   // image taken from https://www.pexels.com/
-  background: url(/img/house1.jpg);
+  background: url(img/house1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
