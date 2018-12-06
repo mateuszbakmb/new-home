@@ -13,6 +13,7 @@
 body {
   background: url(../img/house1.jpg);
   background-size: cover;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: absolute;
@@ -70,7 +71,7 @@ section #titlePage #makeHome {
 }
 section .infoText {
   font-size: 1.3rem;
-  padding: 50px;
+  padding: 50px 10px 50px 10px;
 }
 section .infoText .textPanel {
   padding: 10px;
