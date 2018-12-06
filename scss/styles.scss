@@ -131,6 +131,15 @@ section {
     color: $white;
     height: auto;
     background-color: $grey-color;
+
+    #projects, #satisfied {
+      font-size: calc(1rem + 2vw);
+
+      #projectsCounter, #satisfiedCounter {
+        font-weight: bold;
+        color: $lightblue-color;
+      }
+    }
   }
 
   #contact {

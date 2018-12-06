@@ -99,6 +99,13 @@ section #customers {
   height: auto;
   background-color: #4b4b4b;
 }
+section #customers #projects, section #customers #satisfied {
+  font-size: calc(1rem + 2vw);
+}
+section #customers #projects #projectsCounter, section #customers #projects #satisfiedCounter, section #customers #satisfied #projectsCounter, section #customers #satisfied #satisfiedCounter {
+  font-weight: bold;
+  color: #5ba4cc;
+}
 section #contact {
   padding: 50px;
   color: #fff;
