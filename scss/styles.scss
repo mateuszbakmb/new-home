@@ -31,7 +31,6 @@ margin:0;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  // position: absolute;
   height: 100vh;
   width: 100%;
   margin: 0;
@@ -95,13 +94,13 @@ section {
   }
 
     .infoText {
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 1.3rem;
       padding: 50px 10px 50px 10px;
 
       .textPanel{
+        font-family: 'Ubuntu', sans-serif;
         padding: 10px;
         text-align: justify;
+        font-size: 1.3rem;
         }
 
       .iconPanel {

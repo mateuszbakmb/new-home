@@ -74,13 +74,13 @@ section #titlePage #makeHome {
   padding: 40px 60px;
 }
 section .infoText {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.3rem;
   padding: 50px 10px 50px 10px;
 }
 section .infoText .textPanel {
+  font-family: "Ubuntu", sans-serif;
   padding: 10px;
   text-align: justify;
+  font-size: 1.3rem;
 }
 section .infoText .iconPanel {
   padding: 10px;
