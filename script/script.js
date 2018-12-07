@@ -52,3 +52,7 @@ function countUpSatisfied(){
       }
     }, 1)
 }
+
+window.onbeforeunload = ()=> {
+  window.scrollTo(0, 0);
+}
