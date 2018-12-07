@@ -28,7 +28,6 @@ body {
 
 nav {
   background: rgba(0, 0, 0, 0.4);
-  outline: none;
   font-family: Cunia;
   box-sizing: border-box;
 }
@@ -41,6 +40,7 @@ nav a:hover {
   color: #5ba4cc;
 }
 nav .fas.fa-bars {
+  outline: none;
   color: #fff;
   font-size: 1.9rem;
 }
