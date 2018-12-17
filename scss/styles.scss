@@ -113,14 +113,20 @@ section {
   #howPage {
     padding: 50px;
     color: $white;
-    height: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $dark-color;
   }
 
   #movingService{
     padding: 50px;
     color: $white;
-    height: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $burg-color;
   }
 
@@ -129,6 +135,9 @@ section {
     padding: 50px;
     color: $white;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $grey-color;
 
     #projects, #satisfied {
@@ -145,7 +154,10 @@ section {
   #contact {
     padding: 50px;
     color: $white;
-    height: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $black-color;
   }
 
@@ -210,4 +222,12 @@ section {
 
 .hovering img:hover{
   transform: scale(0.95);
+}
+
+//queries
+
+@media only screen and (min-height: 750px){
+  html{
+    font-size: 120%;
+  }
 }

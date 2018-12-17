@@ -90,19 +90,28 @@ section .infoText .iconPanel {
 section #howPage {
   padding: 50px;
   color: #fff;
-  height: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #04082a;
 }
 section #movingService {
   padding: 50px;
   color: #fff;
-  height: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #421316;
 }
 section #customers {
   padding: 50px;
   color: #fff;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #4b4b4b;
 }
 section #customers #projects, section #customers #satisfied {
@@ -116,7 +125,10 @@ section #customers #projects #projectsCounter, section #customers #projects #sat
 section #contact {
   padding: 50px;
   color: #fff;
-  height: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
 }
 section #customers {
@@ -191,6 +203,12 @@ section #customers {
 
 .hovering img:hover {
   transform: scale(0.95);
+}
+
+@media only screen and (min-height: 750px) {
+  html {
+    font-size: 120%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

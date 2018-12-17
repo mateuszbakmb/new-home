@@ -10,7 +10,6 @@ let href = navbar.querySelectorAll("a[href]").forEach(elem=> {
   }
 })
 
-
 //animated number
 
 let projectsAmount = document.querySelector('#projectsCounter')
